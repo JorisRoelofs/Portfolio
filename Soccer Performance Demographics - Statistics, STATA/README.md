@@ -31,12 +31,14 @@ While it is possible that these resulted in performance differences earlier in t
 Source:
 - Performance dataset: Provided by researcher Chris Snijders from four profesional cups (UEFA Euro 2016, Premier League 2017, Bundesliga 2017 and FIFA World Cup 2018)
 - Demographic dataset: Scraped from www.fifaindex.com (2016-2019).
+
 Data preprocessing:
 - **Merging**: The Excel macro StripAccent.bas was used to overcome character differences in player names, followed by index matching on player name. 6305 of the 43690 rows lacked corresponding demographic data, which were excluded after they were determined to be random.
 - **Removal**: Performance ratings by algorithms were dropped as they might include demographic variables in their calculations, leaving 24229 rows.
 - **Standardization**: Performance ratings were standardized (M=0, SD=10) for each different source.
 - **Cleaning**: Variables were renamed and reordered for clarity, and duplicate variables were dropped.
 - **New Variables**: BMI was calculated based on height and weight, age during each competition was calculated based on birthday, and a left-footedness dummy was created.
+
 Key variables:
 |Performance|rating|individual performance ratings by experts from Kicker, Bild, and Skysport|
 |Demographics|agecup|age during competition|
