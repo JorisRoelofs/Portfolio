@@ -40,6 +40,7 @@ Data preprocessing:
 - **New Variables**: BMI was calculated based on height and weight, age during each competition was calculated based on birthday, and a left-footedness dummy was created.
 
 Key variables:
+
 |Performance|rating|individual performance ratings by experts from Kicker, Bild, and Skysport|
 |Demographics|agecup|age during competition|
 ||height|single height value found|
