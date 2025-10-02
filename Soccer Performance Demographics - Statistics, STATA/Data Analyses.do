@@ -212,8 +212,6 @@ di "/////////////////////////////////////////// FORWARD ////////////////////////
 
 sum tall short old young heavy light if dup <= 1
 
-//why does sum give different number of observations between these variables whereas tab does not?
-
 gen gtall = tall * team_rating
 gen gshort = short * team_rating
 gen gold = old * team_rating
