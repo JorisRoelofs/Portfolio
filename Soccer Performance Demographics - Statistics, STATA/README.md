@@ -41,30 +41,38 @@ Data preprocessing:
 
 Key variables:
 
+|Category|Variable|Description|
+|-|-|-|
 |Performance|rating|individual performance ratings by experts from Kicker, Bild, and Skysport|
+|-|-|-|
 |Demographics|agecup|age during competition|
 ||height|single height value found|
 ||weightcup|weight during competition|
 ||BMI|BMI during competition|
 ||leftfoot|0 = right-footed, 1 = left-footed|
+|-|-|-|
 |Universal|ss_goals|goals scored by the player during the match|
 |performance|team_rating|average rating of the player's teammates|
 |indicators|||
+|-|-|-|
 |Goalkeeper|ss_dangmistakes|dangerous mistakes made by the player|
 |performance|ss_goals_ag_otb|number of goals conceded from outside the box|
 |indicators|ss_goals_ag_itb|number of goals conceded from inside the box|
 ||ss_saves_itb|number of saves made from inside the box|
 ||team_goals|number of goals scored by the team|
 ||opp_bestfw_rating|rating of the best-rated forward of the opponent team|
+|-|-|-|
 |Defender|ss_assists|number of assists made given by the player|
 |performance|ss_chances2score|chances to score that the player had|
 |indicators|ss_clearances|number of clearances made by the player|
 ||team_pos_rating|average rating of the teammates of the same position|
 ||opp_goals|number of goals scored by the opponent team|
+|-|-|-|
 |Midfielder|ss_assists|number of assists made given by the player|
 |performance|ss_passes_acc|number of passes successfully completed by the player|
 |indicators|ss_crosses_acc|number of accurate (completed) crosses by the player|
 ||team_pos_rating|average rating of the teammates of the same position|
+|-|-|-|
 |Forward|ss_touches|number of times the player has touched the ball|
 |performance|||
 |indicators|||
