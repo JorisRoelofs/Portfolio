@@ -7,8 +7,9 @@ Given the high stakes involved professional soccer teams face increasing pressur
 ## Results
 Demograpics were found to differ significantly between Goalkeepers and other roles. Compared to Midfielders, Goalkeepers tend to be taller (12.4<ins>+</ins>1.5 cm, p>0.001), older (2.7<ins>+</ins>1.1 years, p>0.001, and leaner (-2.8<ins>+</ins>0.6 BMI, p>0.001). Nevertheless, even as the shortest role Midfielders are substantially taller than the male population average of ~175cm (p<0.001, d=16.1).
 
-![Height, weight, age, and BMI differences between Goalkeepers, Defenders, Midfielders, and Forwards](https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Boxplot%20Demograpics%20-%20Competition.png)
-*Figure 1. Box plot showing demographical differences between the four roles.*
+<p align="center">
+  <img src=https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Boxplot%20Demograpics%20-%20Role.png width="50%" title = "Height, weight, age, and BMI differences between Goalkeepers, Defenders, Midfielders, and Forwards"\>
+</p>
 
 Nevertheless, no substantial effects were found of age, height, weight, BMI, or footedness on individual player performance ratings by experts (Kicker, Bild, Skysport).
 
@@ -17,35 +18,80 @@ Nevertheless, no substantial effects were found of age, height, weight, BMI, or 
   <tr>
     <td align="center">
       <b>Goalkeeper</b><br>
-      <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Demographics%20-%20Goalkeeper.png" width="100%">
+      <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Demographics%20-%20Goalkeeper.png"/>
     </td>
     <td align="center">
       <b>Defender</b><br>
-      <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Demographics%20-%20Defender.png" width="100%"> 
+      <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Demographics%20-%20Defender.png"/> 
     </td>
   </tr>
   <tr>
     <td align="center">
       <b>Midfielder</b><br>
-      <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Demographics%20-%20Midfielder.png">
+      <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Demographics%20-%20Midfielder.png"/>
     </td>
     <td align="center">
       <b>Defender</b><br>
-      <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Demographics%20-%20Forward.png"> 
+      <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Demographics%20-%20Forward.png"/> 
       </td>
   </tr>
 </table>
+
 *Figure 2. (Robust clustered) linear regression models using demographic variables to predict expert ratings*
 
 Experts even rated the top 2.5% tallest, oldest, and lightest Goalkeepers marginally worse on performance than their short, young, and heavy counterparts.
 
-![alt text](Extreme cases)
+<table>
+  <tr>
+    <td align="center">
+      <b>Goalkeeper</b><br>
+      <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Demographic%20Extremes%20-%20Goalkeeper.png"/>
+    </td>
+    <td align="center">
+      <b>Defender</b><br>
+      <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Demographic%20Extremes%20-%20Defender.png"/> 
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <b>Midfielder</b><br>
+      <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Demographic%20Extremes%20-%20Midfielder.png"/>
+    </td>
+    <td align="center">
+      <b>Defender</b><br>
+      <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Demographic%20Extremes%20-%20Forward.png"/> 
+      </td>
+  </tr>
+</table>
+
 *Figure 3. (Robust clustered) linear regression models using demographic extremes (top/bottom 2.5%) to predict expert ratings*
 
 
 While it is possible that these resulted in performance differences earlier in their career, selecting taller, older, and leaners players for a Goalkeeper role does little to affect performance at a profesional level. More relevant role-specific performance indicators were determined in the following models.
 
-![alt text](performative models)
+<table>
+  <tr>
+    <td align="center">
+      <b>Goalkeeper</b><br>
+      <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Performance%20Metrics%20-%20Goalkeeper.png" title="ss_dangmistakes: dangerous mistakes by player, ss_goals_ag_otb: goals conceded from outside the box, ss_goals_ag_itb: goals conceded from inside the box, ss_saves_itb: saves made from inside the box, team_goals: goals by team, team_rating: average rating of other team members, opp_gk_rating: rating of opponent goalkeeper, opp_bestfw_rating: highest rating of opponent forwards"/>
+    </td>
+    <td align="center">
+      <b>Defender</b><br>
+      <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Performance%20Metrics%20-%20Defender.png" title="ss_goals: goals by player, ss_assists: assists by player, ss_chances2score: chances player had to score, ss_clearances: clearances made by player, team_rating: average rating of other team players, team_pos_rating: average rating of other players in this position, opp_goals: goals made by opponents"/>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <b>Midfielder</b><br>
+      <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Performance%20Metrics%20-%20Midfielder.png" title="ss_goals: goals by player, ss_assists: assists by player, ss_passes_acc: accurate passes by player, ss_crosses_acc: accurate crosses by player, team_rating: average rating of other team members, team_pos_rating: average rating of other players in this position"/>
+    </td>
+    <td align="center">
+      <b>Defender</b><br>
+      <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Performance%20Metrics%20-%20Forward.png" title="ss_goals: goals by player, ss_touches: number of times the player touched the ball, team_rating: average rating of other team members"/> 
+      </td>
+  </tr>
+</table>
+
 *Figure 4. (Robust clustered) linear regression models using result-driven performance indactors as comparison to demographic variables*
 
 
@@ -56,7 +102,7 @@ While it is possible that these resulted in performance differences earlier in t
 |     Defender            |     ss_assists     ss_chances2score     ss_clearances     team_pos_rating     opp_goals                               |     number of assists made given by the player     chances to score that the player had during the game     number of clearances made by the player     average rating of the teammates of the same position     number of goals scored by the opponent team                                  |
 |     Midfielder          |     ss_assists     ss_passes_acc     ss_crosses_acc     team_pos_rating                                               |     number of assists made given by the player     number of passes successfully completed in the game by the player     number of accurate (completed) crosses by the player in the game     average rating of the teammates of the same position                                            |
 |     Forward             |     ss_touches                                                                                                        |     number of times the player has touched the ball during the game, for any reason                                                                                                                                                                                                           |
-*Table 1.*
+*Table 1. Explanation of perfomance variables*
 
 ## Method
 Sources:
@@ -108,12 +154,61 @@ Box plots were drawn in R for comparison between roles and cups. Robust clustere
 
 ## Appendix
 Demographic differences were also compared between the competitions to ensure compatibility. As can be seen below no major differences were found, allowing them to be used together in the analysis.
-![Box plot showing height, weight, age, and BMI differences between Euro 2016, Bundesliga 2017, Premier League 2017, and World Cup 2018](https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Boxplot%20Demograpics%20-%20Competition.pdf)
+<p align="center">
+  <img src=https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Boxplot%20Demograpics%20-%20Competition.png width="50%" title = "Height, weight, age, and BMI differences between Euro 2016, Bundesliga 2017, Premier League 2017, and World Cup 2018"\>
+</p>
+
 *Figure A.1. Box plot showing demographical differences between the four competitions.*
 
 
-Interaction effects between the demographic extremes and universal performance predictors of goals (Figure A.1) and team rating (Figure A.2), but they did little to explain differences in performance ratings (R^2<0.05).
+Interaction effects between the demographic extremes and universal performance predictors of goals (Figure A.2) and team rating (Figure A.3), but they did little to explain differences in performance ratings (R^2<0.05).
 
-![alt text](Goals interaction)
+<table>
+  <tr>
+    <td align="center">
+      <b>Goalkeeper</b><br>
+      <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Goal%20Interactions%20-%20Goalkeeper.png"/>
+    </td>
+    <td align="center">
+      <b>Defender</b><br>
+      <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Goal%20Interactions%20-%20Defender.png"/> 
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <b>Midfielder</b><br>
+      <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Goal%20Interactions%20-%20Midfielder.png"/>
+    </td>
+    <td align="center">
+      <b>Defender</b><br>
+      <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Goal%20Interactions%20-%20Forward.png"/> 
+      </td>
+  </tr>
+</table>
 
-![alt text](Team rating interaction)
+*Figure A.2.*
+
+<table>
+  <tr>
+    <td align="center">
+      <b>Goalkeeper</b><br>
+      <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Team%20Rating%20Interactions%20-%20Defender.png"/>
+    </td>
+    <td align="center">
+      <b>Defender</b><br>
+      <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Team%20Rating%20Interactions%20-%20Defender.png"/> 
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <b>Midfielder</b><br>
+      <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Team%20Rating%20Interactions%20-%20Midfielder.png"/>
+    </td>
+    <td align="center">
+      <b>Defender</b><br>
+      <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Team%20Rating%20Interactions%20-%20Forward.png"/> 
+      </td>
+  </tr>
+</table>
+
+*Figure A.3.*
