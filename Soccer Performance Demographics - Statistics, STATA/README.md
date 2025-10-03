@@ -7,12 +7,20 @@ Given the high stakes involved professional soccer teams face increasing pressur
 ## Results
 Demograpics were found to differ significantly between Goalkeepers and other roles. Compared to Midfielders, Goalkeepers tend to be taller (12.4<ins>+</ins>1.5 cm, p>0.001), older (2.7<ins>+</ins>1.1 years, p>0.001, and leaner (-2.8<ins>+</ins>0.6 BMI, p>0.001). Nevertheless, even as the shortest role Midfielders are substantially taller than the male population average of ~175cm (p<0.001, d=16.1).
 
-![alt text](https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/All%20Analyses/Box%20Plot%20-%20Demographics%20per%20Roles.png?raw=true)
-*Figure 1. Box plot of demographic variables per role*
+![Height, weight, age, and BMI differences between Goalkeepers, Defenders, Midfielders, and Forwards](https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Boxplot%20Demograpics%20-%20Competition.pdf)
+*Figure 1. Box plot showing demographical differences between the four roles.*
 
 Nevertheless, no substantial effects were found of age, height, weight, BMI, or footedness on individual player performance ratings by experts (Kicker, Bild, Skysport).
 
 ![Linear regression output for each of the four roles](Demographics roles)
+<p float="left">
+  <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Demographics%20-%20Goalkeeper.png" width="50%" />
+  <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Demographics%20-%20Defender.png" width="50%" /> 
+</p>
+<p float="left">
+  <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Demographics%20-%20Midfielder.png" width="50%" />
+  <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Demographics%20-%20Forward.png" width="50%" /> 
+</p>
 *Figure 2. (Robust clustered) linear regression models using demographic variables to predict expert ratings*
 
 Experts even rated the top 2.5% tallest, oldest, and lightest Goalkeepers marginally worse on performance than their short, young, and heavy counterparts.
@@ -85,6 +93,11 @@ Final analyses:
 Box plots were drawn in R for comparison between roles and cups. Robust clustered linear regression were used in STATA for the predictive models. A robust clustered one-sample t-test was later added using R to compare Midfielder heights to the population average.
 
 ## Appendix
+Demographic differences were also compared between the competitions to ensure compatibility. As can be seen below no major differences were found, allowing them to be used together in the analysis.
+![Box plot showing height, weight, age, and BMI differences between Euro 2016, Bundesliga 2017, Premier League 2017, and World Cup 2018](https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Boxplot%20Demograpics%20-%20Competition.pdf)
+*Figure A.1. Box plot showing demographical differences between the four competitions.*
+
+
 Interaction effects between the demographic extremes and universal performance predictors of goals (Figure A.1) and team rating (Figure A.2), but they did little to explain differences in performance ratings (R^2<0.05).
 
 ![alt text](Goals interaction)
