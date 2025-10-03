@@ -8,7 +8,7 @@ Given the high stakes involved professional soccer teams face increasing pressur
 Demograpics were found to differ significantly between Goalkeepers and other roles. Compared to Midfielders, Goalkeepers tend to be taller (12.4<ins>+</ins>1.5 cm, p>0.001), older (2.7<ins>+</ins>1.1 years, p>0.001, and leaner (-2.8<ins>+</ins>0.6 BMI, p>0.001). Nevertheless, even as the shortest role Midfielders are substantially taller than the male population average of ~175cm (p<0.001, d=16.1).
 
 <p align="center">
-  <img src=https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Boxplot%20Demograpics%20-%20Role.png width="50%" title = "Height, weight, age, and BMI differences between Goalkeepers, Defenders, Midfielders, and Forwards"\>
+  <img src=https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Boxplot%20Demograpics%20-%20Role.png title = "Height, weight, age, and BMI differences between Goalkeepers, Defenders, Midfielders, and Forwards"\>
 </p>
 
 Nevertheless, no substantial effects were found of age, height, weight, BMI, or footedness on individual player performance ratings by experts (Kicker, Bild, Skysport).
@@ -155,7 +155,7 @@ Box plots were drawn in R for comparison between roles and cups. Robust clustere
 ## Appendix
 Demographic differences were also compared between the competitions to ensure compatibility. As can be seen below no major differences were found, allowing them to be used together in the analysis.
 <p align="center">
-  <img src=https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Boxplot%20Demograpics%20-%20Competition.png width="50%" title = "Height, weight, age, and BMI differences between Euro 2016, Bundesliga 2017, Premier League 2017, and World Cup 2018"\>
+  <img src=https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Boxplot%20Demograpics%20-%20Competition.png title = "Height, weight, age, and BMI differences between Euro 2016, Bundesliga 2017, Premier League 2017, and World Cup 2018"\>
 </p>
 
 *Figure A.1. Box plot showing demographical differences between the four competitions.*
