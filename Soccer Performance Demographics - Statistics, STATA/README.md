@@ -95,13 +95,13 @@ While it is possible that these resulted in performance differences earlier in t
 *Figure 4. (Robust clustered) linear regression models using result-driven performance indactors as comparison to demographic variables*
 
 
-|     Role                |     Performance predictors                                                                                            |     Variable name   explanation                                                                                                                                                                                                                                                               |
-|-------------------------|-----------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|     Universal           |     ss_goals     team_rating                                                                                          |     goals scored by the player during the match     average rating of the player's teammates during the game                                                                                                                                                                                  |
-|     Goalkeeper          |     ss_dangmistakes     ss_goals_ag_otb     ss_goals_ag_itb     ss_saves_itb     team_goals      opp_bestfw_rating    |     dangerous mistakes made by the player     number of goals conceded from outside the box     number of goals conceded from inside the box     number of saves made from inside the box     number of goals scored by the team     rating of the best-rated forward of the opponent team    |
-|     Defender            |     ss_assists     ss_chances2score     ss_clearances     team_pos_rating     opp_goals                               |     number of assists made given by the player     chances to score that the player had during the game     number of clearances made by the player     average rating of the teammates of the same position     number of goals scored by the opponent team                                  |
-|     Midfielder          |     ss_assists     ss_passes_acc     ss_crosses_acc     team_pos_rating                                               |     number of assists made given by the player     number of passes successfully completed in the game by the player     number of accurate (completed) crosses by the player in the game     average rating of the teammates of the same position                                            |
-|     Forward             |     ss_touches                                                                                                        |     number of times the player has touched the ball during the game, for any reason                                                                                                                                                                                                           |
+|Role|Variable|Explanation|
+|-|-|-|
+|Goalkeeper|ss_dangmistakes<br>ss_goals_ag_otb<br>ss_goals_ag_itb<br>ss_saves_itb<br>team_goals<br><team_rating><br>opp_bestfw_rating|dangerous mistakes made by the player<br>number of goals conceded from outside the box<br>number of goals conceded from inside the box<br>number of saves made from inside the box<br>number of goals scored by the team<br>average rating of the player's teammates<br>rating of the best-rated forward of the opponent team|
+|Defender|ss_goals<br>ss_assists<br>ss_chances2score<br>ss_clearances<br><team_rating><br>team_pos_rating<br>opp_goals|goals scored by the player<br>number of assists made given by the player<br>number of chances the player had to score<br>number of clearances made by the player<br>average rating of teammates with the same role<br>average rating of the player's teammates<br>number of goals scored by the opponent team|
+|Midfielder|ss_goals<br>ss_assists<br>ss_passes_acc<br>ss_crosses_acc<br><team_rating><br>team_pos_rating|goals scored by the player<br>number of assists made given by the player<br>number of passes successfully completed by the player<br>number of accurate (completed) crosses by the player<br>average rating of teammates with the same role<br>average rating of the player's teammates|
+|Forward|ss_goals<br>ss_touches<br><team_rating>|goals scored by the player<br>how often the player touched the ball, for any reason<br>average rating of the player's teammates|
+
 *Table 1. Explanation of perfomance variables*
 
 ## Method
@@ -116,38 +116,9 @@ Data preprocessing:
 - **Cleaning**: Variables were renamed and reordered for clarity, and duplicate variables were dropped.
 - **New Variables**: BMI was calculated based on height and weight, age during each competition was calculated based on birthday, and a left-footedness dummy was created.
 
-Key variables:
-
-|Category|Variable|Description|
-|-|-|-|
-|Performance|rating|Individual performance ratings by experts from Kicker, Bild, and Skysport|
-|Demographics|agecup|Age during competition|
-||height|Height constant found in dataset|
-||weightcup|Weight during competition|
-||bmi|BMI during competition|
-||leftfoot|0 = right-footed, 1 = left-footed|
-|Universal performance indicators|ss_goals|Goals scored by the player during the match|
-||team_rating|Average rating of the player's teammates|
-||||
-|Goalkeeper performance indicators|ss_dangmistakes|Dangerous mistakes made by the player|
-||ss_goals_ag_otb|Number of goals conceded from outside the box|
-||ss_goals_ag_itb|Number of goals conceded from inside the box|
-||ss_saves_itb|Number of saves made from inside the box|
-||team_goals|Number of goals scored by the team|
-||opp_bestfw_rating|Rating of the best-rated forward of the opponent team|
-|Defender performance indicators|ss_assists|Number of assists made given by the player|
-||ss_chances2score|Chances to score that the player had|
-||ss_clearances|Number of clearances made by the player|
-||team_pos_rating|Average rating of the teammates of the same position|
-||opp_goals|Number of goals scored by the opponent team|
-|Midfielder performance indicators|ss_assists|Number of assists made given by the player|
-||ss_passes_acc|Number of passes successfully completed by the player|
-||ss_crosses_acc|Number of accurate (completed) crosses by the player|
-||team_pos_rating|Average rating of the teammates of the same position|
-|Forward performance indicators|ss_touches|Number of times the player has touched the ball|
-
 Assumption checking:
-As the same player playing in multiple matches should not be considered entirely different cases, a multilevel regression was initially used to separate players. However, when checking for the model assumptions heteroscedasticity and error independence did not hold for many of these models, so ‘robust’ linear regression was chosen in the end with clustering to separate players. The conclusions did not change with the new models. Outlier counts were within the margins of a normal distribution (<5% for 1.96 STD, <1% for 2.5 STD, <0.1% for 3.29 STD), and residual normality was not relevant for the new robust models.
+- **Heteroscedasticity & Error Independence**: Originally a multilevel regression was used to separate players, but it was replaced with robust clustered linear regression to account for heteroscedasticity and error independence not holding for many of the models. The conclusions did not change with the new models.
+- **Outliers**: Outlier counts were within the margins of a normal distribution (<5% for 1.96 STD, <1% for 2.5 STD, <0.1% for 3.29 STD).
 
 Final analyses:
 Box plots were drawn in R for comparison between roles and cups. Robust clustered linear regression were used in STATA for the predictive models. A robust clustered one-sample t-test was later added using R to compare Midfielder heights to the population average.
