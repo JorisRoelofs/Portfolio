@@ -1,8 +1,4 @@
 # Setup
-## Clear data
-rm(list = ls())
-
-## Add libraries
 library(clubSandwich)
 library(dplyr)
 library(haven)
@@ -12,22 +8,24 @@ library(lmtest)
 library(tidyr)
 library(reshape2)
 library(patchwork)
+rm(list = ls())
 
-## Open dataset
-setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
-data <- read_dta("Processed Dataset.dta")
 
-## Remove players with unknown positions
+# Set file path
+data <- read_dta("C:/Users/shoot/OneDrive - TU Eindhoven/Data Science/Portfolio/Soccer Performance Demographics - Statistics, STATA/Processed Dataset.dta")
+
+
+# Remove players with unknown positions
 data <- data %>% filter(position != "")
 
 
-# Count unique players
+# Unique player count
 length(unique(data$player_id[!is.na(data$player_id)]))
 
 
 # Midfielder height vs average population
 midfielders <- data[data$position == "Midfielder", ]
-midfielders$height_centered <- midfielders$height - 175
+midfielders$height_centered <- midfielders$height - 172.7
 
 ## Clustered robust one-sample t-test
 model <- lm(height_centered ~ 1, data = midfielders)
@@ -71,7 +69,7 @@ make_boxplot <- function(dataset, var_x, var_y, var_label, unit, major_step = 10
 
   ### Plot boxplot
   ggplot(dataset, aes(x = .data[[var_x]], y = .data[[var_y]], fill = .data[[var_x]])) +
-    geom_boxplot(alpha = 1, outlier.color = "black") +
+    geom_boxplot(alpha = 0.7, outlier.color = "black") +
     scale_fill_manual(values = fill_colors) +
     scale_y_continuous(
       breaks = scales::breaks_width(major_step),
@@ -87,18 +85,16 @@ make_boxplot <- function(dataset, var_x, var_y, var_label, unit, major_step = 10
     )
 }
 
-## Demographic boxplots by role and competition
-datasets <- list(
-  "position" = player_avg,
-  "competition" = player_cup
-)
+## Demographics boxplots by role
+p1 <- make_boxplot(player_avg, "position", "height", "Height", " cm")
+p2 <- make_boxplot(player_avg, "position", "weightcup", "Weight", " kg")
+p3 <- make_boxplot(player_avg, "position", "agecup", "Age", " yo")
+p4 <- make_boxplot(player_avg, "position", "bmi", "BMI", expression(" kg/m^2"))
+(p1 | p2) / (p3 | p4)
 
-for(category in names(datasets))
-{
-  dataset <- datasets[[category]]
-  p1 <- make_boxplot(dataset, category, "height", "Height", " cm")
-  p2 <- make_boxplot(dataset, category, "weightcup", "Weight", " kg")
-  p3 <- make_boxplot(dataset, category, "agecup", "Age", " yo")
-  p4 <- make_boxplot(dataset, category, "bmi", "BMI", expression(" kg/m^2"))
-  print(p1 | p2 | p3 | p4)
-}
+## Demographics boxplots by cup
+p1 <- make_boxplot(player_cup, "competition", "height", "Height", " cm")
+p2 <- make_boxplot(player_cup, "competition", "weightcup", "Weight", " kg")
+p3 <- make_boxplot(player_cup, "competition", "agecup", "Age", " yo")
+p4 <- make_boxplot(player_cup, "competition", "bmi", "BMI", expression(" kg/m^2"))
+(p1 | p2) / (p3 | p4)
