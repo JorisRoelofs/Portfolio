@@ -1,4 +1,8 @@
 # Setup
+## Clear data
+rm(list = ls())
+
+## Add libraries
 library(clubSandwich)
 library(dplyr)
 library(haven)
@@ -8,18 +12,16 @@ library(lmtest)
 library(tidyr)
 library(reshape2)
 library(patchwork)
-rm(list = ls())
 
+## Open dataset
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+data <- read_dta("Processed Dataset.dta")
 
-# Set file path
-data <- read_dta("C:/Users/shoot/OneDrive - TU Eindhoven/Data Science/Portfolio/Soccer Performance Demographics - Statistics, STATA/Processed Dataset.dta")
-
-
-# Remove players with unknown positions
+## Remove players with unknown positions
 data <- data %>% filter(position != "")
 
 
-# Unique player count
+# Count unique players
 length(unique(data$player_id[!is.na(data$player_id)]))
 
 
@@ -69,7 +71,7 @@ make_boxplot <- function(dataset, var_x, var_y, var_label, unit, major_step = 10
 
   ### Plot boxplot
   ggplot(dataset, aes(x = .data[[var_x]], y = .data[[var_y]], fill = .data[[var_x]])) +
-    geom_boxplot(alpha = 0.7, outlier.color = "black") +
+    geom_boxplot(alpha = 1, outlier.color = "black") +
     scale_fill_manual(values = fill_colors) +
     scale_y_continuous(
       breaks = scales::breaks_width(major_step),
@@ -90,11 +92,11 @@ p1 <- make_boxplot(player_avg, "position", "height", "Height", " cm")
 p2 <- make_boxplot(player_avg, "position", "weightcup", "Weight", " kg")
 p3 <- make_boxplot(player_avg, "position", "agecup", "Age", " yo")
 p4 <- make_boxplot(player_avg, "position", "bmi", "BMI", expression(" kg/m^2"))
-(p1 | p2) / (p3 | p4)
+(p1 | p2 | p3 | p4)
 
 ## Demographics boxplots by cup
 p1 <- make_boxplot(player_cup, "competition", "height", "Height", " cm")
 p2 <- make_boxplot(player_cup, "competition", "weightcup", "Weight", " kg")
 p3 <- make_boxplot(player_cup, "competition", "agecup", "Age", " yo")
 p4 <- make_boxplot(player_cup, "competition", "bmi", "BMI", expression(" kg/m^2"))
-(p1 | p2) / (p3 | p4)
+(p1 | p2 | p3 | p4)
