@@ -1,19 +1,60 @@
-# Soccer Player Ratings Analysis
-Skills: Statistics, R, STATA, Excel
+# Expert Performance Ratings and Demographics in Soccer
+***Skills***_: Statistics, R, STATA, Excel_
 
-## Summary
+## Overview
 Given the high stakes involved professional soccer teams face increasing pressure to optimize player recruitment and development using objective data. Understanding how demographics affect performance for different roles can guide scouting decisions and team composition. Two datasets were merged, cleaned, and analyzed using Excel, STATA, and R. While age, height, and BMI were found to differ substantially between roles (especially Goalkeepers) their effect on performance was negligible to non-existent, suggesting that players are partially selected based on appearance. More indicative role-specific performance metrics are discussed for each role to guide scouting decisions and team composition.
 
+## Data Sources
+- **Performance dataset**: 134 metrics for each player per match from four profesional cups (UEFA Euro 2016, Premier League 2017, Bundesliga 2017 and FIFA World Cup 2018). Provided by researcher Chris Snijders.
+- **Demographic dataset**: Height, weight, date of birth, and footedness for each player between 2016 and 2019. Scraped from www.fifaindex.com.
+
+## Data Processing
+- **Merging**: The Excel macro "StripAccent.bas" was used to standardize player names, followed by index matching. Rows without demographic matches were removed (6,305 of 43,690). No patterns were found that differentiated these from the remaining rows.
+- **Filtering**: Algorithmic performance ratings (SofaScore, WhoScored, The Guardian) were removed to avoid potential contamination of predictors (13,086 of 37,385). The final dataset includes 24,229 expert ratings for 1,442 players.
+- **Standardization**: Performance ratings were standardized to mean 0 and standard deviation 10 for each expert source separately (Kicker, Bild, Skysport).
+- **Derived Variables**: BMI was calculated based on height and weight, age during each competition was calculated based on birthday, and a left-footedness dummy was created.
+- **Outliers**: Counts of extreme values were determined to be withing acceptable limits (<5% for 1.96 STD, <1% for 2.5 STD, <0.1% for 3.29 STD).
+
+## Statistical Analysis
+- **Predictive Modeling**: Robust clustered linear regressions were computed in STATA to account for repeated measures per player, heteroscedasticity, and residual correlations.
+- **Hypothesis Testing**: A robust clustered one-sample t-test was computed in R to compare Midfielder heights against the population average.
+- **Visualization**: Box plots were generated in R to compare demographics across roles and competitions.
+
 ## Results
-Demograpics were found to differ significantly between Goalkeepers and other roles. Compared to Midfielders, Goalkeepers tend to be taller (12.4<ins>+</ins>1.5 cm, p>0.001), older (2.7<ins>+</ins>1.1 years, p>0.001, and leaner (-2.8<ins>+</ins>0.6 BMI, p>0.001). Nevertheless, even as the shortest role Midfielders are substantially taller than the male population average of ~175cm (p<0.001, d=16.1).
+### Demographic Differences Between Roles
+Goalkeepers displayed significant differences compared to other roles. Relative to Midfielders, Goalkeepers were taller (+12.4 ± 1.5 cm, p < 0.001), older (+2.7 ± 1.1 years, p < 0.001), and leaner (−2.8 ± 0.6 BMI, p < 0.001). Nevertheless, even as the shortest role Midfielders (179.7cm) were substantially taller than the male population average of 172.7cm (p < 0.001, Cohen’s d = 23.5).
 
 <p align="center">
   <img src=https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Boxplot%20Demograpics%20-%20Role.png title = "Height, weight, age, and BMI differences between Goalkeepers, Defenders, Midfielders, and Forwards"\>
 </p>
 
-Nevertheless, no substantial effects were found of age, height, weight, BMI, or footedness on individual player performance ratings by experts (Kicker, Bild, Skysport).
+<table>
+  <tr>
+    <td align="center">
+      <b>Goalkeeper</b><br>
+      <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Role%20Differences%20-%20Height.png"/>
+    </td>
+    <td align="center">
+      <b>Defender</b><br>
+      <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Role%20Differences%20-%20Height.png"/> 
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <b>Midfielder</b><br>
+      <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Role%20Differences%20-%20Age.png"/>
+    </td>
+    <td align="center">
+      <b>Defender</b><br>
+      <img src=https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Role%20Differences%20-%20BMI.png"/> 
+      </td>
+  </tr>
+</table>
 
-![Linear regression output for each of the four roles](Demographics roles)
+
+### Predictive Value pf Demographics
+Despite these differences, no substantial effects were found of age, height, weight, BMI, or footedness on individual player performance ratings by experts (Kicker, Bild, Skysport).
+
 <table>
   <tr>
     <td align="center">
@@ -66,7 +107,7 @@ Experts even rated the top 2.5% tallest, oldest, and lightest Goalkeepers margin
 
 *Figure 3. (Robust clustered) linear regression models using demographic extremes (top/bottom 2.5%) to predict expert ratings*
 
-
+### Role-Specific Performance Metrics
 While it is possible that these resulted in performance differences earlier in their career, selecting taller, older, and leaners players for a Goalkeeper role does little to affect performance at a profesional level. More relevant role-specific performance indicators were determined in the following models.
 
 <table>
@@ -97,31 +138,12 @@ While it is possible that these resulted in performance differences earlier in t
 
 |Role|Variable|Explanation|
 |-|-|-|
-|Goalkeeper|ss_dangmistakes<br>ss_goals_ag_otb<br>ss_goals_ag_itb<br>ss_saves_itb<br>team_goals<br><team_rating><br>opp_bestfw_rating|dangerous mistakes made by the player<br>number of goals conceded from outside the box<br>number of goals conceded from inside the box<br>number of saves made from inside the box<br>number of goals scored by the team<br>average rating of the player's teammates<br>rating of the best-rated forward of the opponent team|
-|Defender|ss_goals<br>ss_assists<br>ss_chances2score<br>ss_clearances<br><team_rating><br>team_pos_rating<br>opp_goals|goals scored by the player<br>number of assists made given by the player<br>number of chances the player had to score<br>number of clearances made by the player<br>average rating of teammates with the same role<br>average rating of the player's teammates<br>number of goals scored by the opponent team|
-|Midfielder|ss_goals<br>ss_assists<br>ss_passes_acc<br>ss_crosses_acc<br><team_rating><br>team_pos_rating|goals scored by the player<br>number of assists made given by the player<br>number of passes successfully completed by the player<br>number of accurate (completed) crosses by the player<br>average rating of teammates with the same role<br>average rating of the player's teammates|
-|Forward|ss_goals<br>ss_touches<br><team_rating>|goals scored by the player<br>how often the player touched the ball, for any reason<br>average rating of the player's teammates|
+|Goalkeeper|ss_dangmistakes<br>ss_goals_ag_otb<br>ss_goals_ag_itb<br>ss_saves_itb<br>team_goals<br>team_rating<br>opp_bestfw_rating|dangerous mistakes made by the player<br>number of goals conceded from outside the box<br>number of goals conceded from inside the box<br>number of saves made from inside the box<br>number of goals scored by the team<br>average rating of the player's teammates<br>rating of the best-rated forward of the opponent team|
+|Defender|ss_goals<br>ss_assists<br>ss_chances2score<br>ss_clearances<br>team_rating<br>team_pos_rating<br>opp_goals|goals scored by the player<br>number of assists made given by the player<br>number of chances the player had to score<br>number of clearances made by the player<br>average rating of teammates with the same role<br>average rating of the player's teammates<br>number of goals scored by the opponent team|
+|Midfielder|ss_goals<br>ss_assists<br>ss_passes_acc<br>ss_crosses_acc<br>team_rating<br>team_pos_rating|goals scored by the player<br>number of assists made given by the player<br>number of passes successfully completed by the player<br>number of accurate (completed) crosses by the player<br>average rating of teammates with the same role<br>average rating of the player's teammates|
+|Forward|ss_goals<br>ss_touches<br>team_rating|goals scored by the player<br>how often the player touched the ball, for any reason<br>average rating of the player's teammates|
 
 *Table 1. Explanation of perfomance variables*
-
-## Method
-Sources:
-- **Performance dataset**: 105 performance metrics for each player per match from four profesional cups (UEFA Euro 2016, Premier League 2017, Bundesliga 2017 and FIFA World Cup 2018), provided by researcher Chris Snijders.
-- **Demographic dataset**: date of birth, height, weight per year, and footedness scraped for each player between 2016 and 2019 from www.fifaindex.com.
-
-Data preprocessing:
-- **Merging**: The Excel macro StripAccent.bas was used to overcome character differences in player names, followed by index matching on player name. 6305 of the 43690 rows lacked corresponding demographic data, which were excluded after they were determined to be random.
-- **Removal**: Performance ratings by algorithms were dropped as they might include demographic variables in their calculations, leaving 24229 rows for 1442 players.
-- **Standardization**: Performance ratings were standardized (M=0, SD=10) for each different source.
-- **Cleaning**: Variables were renamed and reordered for clarity, and duplicate variables were dropped.
-- **New Variables**: BMI was calculated based on height and weight, age during each competition was calculated based on birthday, and a left-footedness dummy was created.
-
-Assumption checking:
-- **Heteroscedasticity & Error Independence**: Originally a multilevel regression was used to separate players, but it was replaced with robust clustered linear regression to account for heteroscedasticity and error independence not holding for many of the models. The conclusions did not change with the new models.
-- **Outliers**: Outlier counts were within the margins of a normal distribution (<5% for 1.96 STD, <1% for 2.5 STD, <0.1% for 3.29 STD).
-
-Final analyses:
-Box plots were drawn in R for comparison between roles and cups. Robust clustered linear regression were used in STATA for the predictive models. A robust clustered one-sample t-test was later added using R to compare Midfielder heights to the population average.
 
 ## Appendix
 Demographic differences were also compared between the competitions to ensure compatibility. As can be seen below no major differences were found, allowing them to be used together in the analysis.
