@@ -13,14 +13,28 @@ Demograpics were found to differ significantly between Goalkeepers and other rol
 Nevertheless, no substantial effects were found of age, height, weight, BMI, or footedness on individual player performance ratings by experts (Kicker, Bild, Skysport).
 
 ![Linear regression output for each of the four roles](Demographics roles)
-<p align="middle">
-  <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Demographics%20-%20Goalkeeper.png" width="48%" />
-  <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Demographics%20-%20Defender.png" width="48%" /> 
-</p>
-<p align="middle">
-  <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Demographics%20-%20Midfielder.png" width="49%" />
-  <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Demographics%20-%20Forward.png" width="49%" /> 
-</p>
+<table>
+  <tr>
+    <td align="center">
+      <b>Goalkeeper</b><br>
+      <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Demographics%20-%20Goalkeeper.png" width="4.9%">
+    </td>
+    <td align="center">
+      <b>Defender</b><br>
+      <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Demographics%20-%20Defender.png" width="4.9%"> 
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <b>Midfielder</b><br>
+      <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Demographics%20-%20Midfielder.png" width="49.9%">
+    </td>
+    <td align="center">
+      <b>Defender</b><br>
+      <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Demographics%20-%20Forward.png" width="49.9%"> 
+      </td>
+  </tr>
+</table>
 *Figure 2. (Robust clustered) linear regression models using demographic variables to predict expert ratings*
 
 Experts even rated the top 2.5% tallest, oldest, and lightest Goalkeepers marginally worse on performance than their short, young, and heavy counterparts.
