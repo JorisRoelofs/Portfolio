@@ -51,7 +51,7 @@ Despite these differences, no substantial effects were found of age, height, wei
 Even in extreme demographical subsets (top/bottom 2.5%) effects were mostly insignificant. In contrast to the Goalkeeper-archetype, the top 2.5% tallest and lightest players were rated slightly worse while the top 2.5% youngest and heaviest players were rated slightly better, although explained variance is minor (p < 0.05, R^2 = 0.01).
 
 <p align="center">
-  <img src=Visuals/Regression Demograpic Extremes.png \>
+  <img src=Visuals/Regression%20Demographic%20Extremes.png \>
   Visuals/Regression Demographic Extremes.png
 </p>
 *Figure 5. (Robust clustered) linear regression models showing insubstantial differences in expert ratings between demographic extremes (top/bottom 2.5%).*
