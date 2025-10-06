@@ -19,7 +19,6 @@ Professional soccer teams face increasing pressure to optimize player recruitmen
 <p align="center">
   <img src=Visuals/Boxplot%20Demograpics%20-%20Competition.png \>
 </p>
-
 *Figure 1. Box plot showing minimal demographical differences between the four competitions.*
 
 ## Statistical Analysis
@@ -32,90 +31,29 @@ Professional soccer teams face increasing pressure to optimize player recruitmen
 Goalkeepers displayed significant differences compared to other roles. Relative to Midfielders, Goalkeepers were taller (+12.4 ± 1.5 cm, p < 0.001), older (+2.7 ± 1.1 years, p < 0.001), and leaner (−2.8 ± 0.6 BMI, p < 0.001). Nevertheless, even as the shortest role Midfielders (179.7cm) were substantially taller than the male population average of 172.7cm (p < 0.001, Cohen’s d = 23.5).
 
 <p align="center">
-  <img src=https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Boxplot%20Demograpics%20-%20Role.png \>
+  <img src=Visuals/Boxplot%20Demograpics%20-%20Role.png \>
 </p>
-
 *Figure 2. Box plot showing the demographical differences between soccer roles.*
 
-<table>
-  <tr>
-    <td align="center">
-      <b>Goalkeeper</b><br>
-      <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Role%20Differences%20-%20Height.png"/>
-    </td>
-    <td align="center">
-      <b>Defender</b><br>
-      <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Role%20Differences%20-%20Height.png"/> 
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <b>Midfielder</b><br>
-      <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Role%20Differences%20-%20Age.png"/>
-    </td>
-    <td align="center">
-      <b>Defender</b><br>
-      <img src=https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Role%20Differences%20-%20BMI.png"/> 
-      </td>
-  </tr>
-</table>
-
-*Table 1. (Robust clustered) linear models showing substantial demographical differences between Goalkeepers and outfield roles.*
+<p align="center">
+  <img src=Visuals/Regression%20Demograpics.png \>
+</p>
+*Figure 3. (Robust clustered) linear models showing substantial demographical differences between Goalkeepers and outfield roles.*
 
 ### Predictive Value of Demographics
 Despite these differences, no substantial effects were found of age, height, weight, BMI, or footedness on individual player performance ratings by experts (Kicker, Bild, Skysport).
 
-<table>
-  <tr>
-    <td align="center">
-      <b>Goalkeeper</b><br>
-      <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Demographics%20-%20Goalkeeper.png"/>
-    </td>
-    <td align="center">
-      <b>Defender</b><br>
-      <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Demographics%20-%20Defender.png"/> 
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <b>Midfielder</b><br>
-      <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Demographics%20-%20Midfielder.png"/>
-    </td>
-    <td align="center">
-      <b>Defender</b><br>
-      <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Demographics%20-%20Forward.png"/> 
-      </td>
-  </tr>
-</table>
-
-*Figure 2. (Robust clustered) linear regression models showing insignificant effects of demographical differences on expert performance ratings.*
+<p align="center">
+  <img src=Visuals/Regression%20Demograpics.png \>
+</p>
+*Figure 4. (Robust clustered) linear regression models showing insignificant effects of demographical differences on expert performance ratings.*
 
 Even in extreme demographical subsets (top/bottom 2.5%) effects were mostly insignificant. In contrast to the Goalkeeper-archetype, the top 2.5% tallest and lightest players were rated slightly worse while the top 2.5% youngest and heaviest players were rated slightly better, although explained variance is minor (p < 0.05, R^2 = 0.01).
 
-<table>
-  <tr>
-    <td align="center">
-      <b>Goalkeeper</b><br>
-      <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Demographic%20Extremes%20-%20Goalkeeper.png"/>
-    </td>
-    <td align="center">
-      <b>Defender</b><br>
-      <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Demographic%20Extremes%20-%20Defender.png"/> 
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <b>Midfielder</b><br>
-      <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Demographic%20Extremes%20-%20Midfielder.png"/>
-    </td>
-    <td align="center">
-      <b>Defender</b><br>
-      <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Demographic%20Extremes%20-%20Forward.png"/> 
-      </td>
-  </tr>
-</table>
-
-*Figure 3. (Robust clustered) linear regression models showing insubstantial differences in expert ratings between demographic extremes (top/bottom 2.5%).*
+<p align="center">
+  <img src=Visuals/Regression%20Demograpic%20Extremes.png \>
+</p>
+*Figure 5. (Robust clustered) linear regression models showing insubstantial differences in expert ratings between demographic extremes (top/bottom 2.5%).*
 
 ### Role-Specific Performance Metrics
 More relevant role-specific performance indicators were determined in the following models.
@@ -143,7 +81,7 @@ More relevant role-specific performance indicators were determined in the follow
   </tr>
 </table>
 
-*Figure 4. (Robust clustered) linear regression models using result-driven performance indactors as comparison to demographic variables.*
+*Figure 6. (Robust clustered) linear regression models using result-driven performance indactors as comparison to demographic variables.*
 
 
 |Role|Variable|Explanation|
@@ -153,7 +91,7 @@ More relevant role-specific performance indicators were determined in the follow
 |Midfielder|ss_goals<br>ss_assists<br>ss_passes_acc<br>ss_crosses_acc<br>team_rating<br>team_pos_rating|goals scored by the player<br>number of assists made given by the player<br>number of passes successfully completed by the player<br>number of accurate (completed) crosses by the player<br>average rating of teammates with the same role<br>average rating of the player's teammates|
 |Forward|ss_goals<br>ss_touches<br>team_rating|goals scored by the player<br>how often the player touched the ball, for any reason<br>average rating of the player's teammates|
 
-*Table 2. Explanation of the role-specific performance variables.*
+*Table 1. Explanation of the role-specific performance variables.*
 
 ### Interaction Effects
 To determine whether demographic variables might have an indirect effect, interactions were evaluated between the demographic extremes and the performance predictors dominant across several roles (goals and team ratings). Nevertheless, the interactions explained only a minor part of the variance (R^2 < 0.05).
@@ -181,7 +119,7 @@ To determine whether demographic variables might have an indirect effect, intera
   </tr>
 </table>
 
-*Figure 5. (Robust clustered) linear regression models testing interaction effects between demographic extremes and goals scored.*
+*Figure 7. (Robust clustered) linear regression models testing interaction effects between demographic extremes and goals scored.*
 
 <table>
   <tr>
@@ -206,7 +144,7 @@ To determine whether demographic variables might have an indirect effect, intera
   </tr>
 </table>
 
-*Figure 5. (Robust clustered) linear regression models testing interaction effects between demographic extremes and team ratings.*
+*Figure 8. (Robust clustered) linear regression models testing interaction effects between demographic extremes and team ratings.*
 
 ## Conclusions
 - **Demographic differences exist yet have limited predictive value:** Goalkeepers were consistently taller, older, and leaner than outfield players. These differences reflect known expectations for Goalkeepers, yet they were found to have little effect on expert performance ratings. It is possible that these demographic traits benefit players earlier in their careers (e.g. height advantages for inexperienced goalkeepers), which would explain why the majority of players were substantially taller than the average population. Nevertheless, these effects were not found in the top national and international competitions, showing that other performance indicators should be used at professional levels.
