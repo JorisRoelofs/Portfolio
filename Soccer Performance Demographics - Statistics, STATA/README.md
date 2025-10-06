@@ -36,7 +36,7 @@ Goalkeepers displayed significant differences compared to other roles. Relative 
 *Figure 2. Box plot showing the demographical differences between soccer roles.*
 
 <p align="center">
-  <img src=Visuals/Regression%20Demographics.png \>
+  <img src=Visuals/Regression%20Demographics.png width=100% \>
 </p>
 *Figure 3. (Robust clustered) linear models showing substantial demographical differences between Goalkeepers and outfield roles.*
 
@@ -44,7 +44,7 @@ Goalkeepers displayed significant differences compared to other roles. Relative 
 Despite these differences, no substantial effects were found of age, height, weight, BMI, or footedness on individual player performance ratings by experts (Kicker, Bild, Skysport).
 
 <p align="center">
-  <img src=Visuals/Regression%20Demographics.png \>
+  <img src=Visuals/Regression%20Demographics.png width=100% \>
 </p>
 *Figure 4. (Robust clustered) linear regression models showing insignificant effects of demographical differences on expert performance ratings.*
 
