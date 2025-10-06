@@ -36,7 +36,7 @@ Goalkeepers displayed significant differences compared to other roles. Relative 
 *Figure 2. Box plot showing the demographical differences between soccer roles.*
 
 <p align="center">
-  <img src=Visuals/Regression%20Demographics.png width=100% \>
+  <img src=Visuals/Regression%20Demographics.png% \>
 </p>
 *Figure 3. (Robust clustered) linear models showing substantial demographical differences between Goalkeepers and outfield roles.*
 
