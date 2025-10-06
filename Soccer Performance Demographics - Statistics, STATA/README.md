@@ -20,7 +20,7 @@ Professional soccer teams face increasing pressure to optimize player recruitmen
   <img src=Visuals/Boxplot%20Demograpics%20-%20Competition.png \>
 </p>
 
-*Figure 1. Box plot showing minimal demographical differences between the four competitions.*
+*Figure 1. Box plot showing limited demographical differences between the four competitions.*
 
 ## Statistical Analysis
 - **Predictive Modeling**: Robust clustered linear regressions were computed in STATA to account for repeated measures per player, heteroscedasticity, and residual correlations. Role-dependent performance indicators were hand-picked using literature reviews and tested across several models to determine which indicators offered substantial predictive power for each role.
@@ -90,7 +90,7 @@ To determine whether demographic variables might have an indirect effect, intera
 
 
 <p align="center">
-  <img src=Visuals/Regression%2Team%20Rating%20Interactions.png \>
+  <img src=Visuals/Regression%20Team%20Rating%20Interactions.png \>
 </p>
 
 *Figure 8. (Robust clustered) linear regression models testing interaction effects between demographic extremes and team ratings.*
