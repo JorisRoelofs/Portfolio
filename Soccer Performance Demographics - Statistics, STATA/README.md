@@ -36,7 +36,7 @@ Goalkeepers displayed significant differences compared to other roles. Relative 
 *Figure 2. Box plot showing the demographical differences between soccer roles.*
 
 <p align="center">
-  <img src=Visuals/Regression%20Demographics.png \>
+  <img src=Visuals/Regression%20Role%20Differences.png \>
 </p>
 *Figure 3. (Robust clustered) linear models showing substantial demographical differences between Goalkeepers and outfield roles.*
 
@@ -44,7 +44,7 @@ Goalkeepers displayed significant differences compared to other roles. Relative 
 Despite these differences, no substantial effects were found of age, height, weight, BMI, or footedness on individual player performance ratings by experts (Kicker, Bild, Skysport).
 
 <p align="center">
-  <img src=Visuals/Regression%20Demographics.png width=100% \>
+  <img src=Visuals/Regression%20Demographics.png \>
 </p>
 *Figure 4. (Robust clustered) linear regression models showing insignificant effects of demographical differences on expert performance ratings.*
 
@@ -52,36 +52,15 @@ Even in extreme demographical subsets (top/bottom 2.5%) effects were mostly insi
 
 <p align="center">
   <img src=Visuals/Regression%20Demographic%20Extremes.png \>
-  Visuals/Regression Demographic Extremes.png
 </p>
 *Figure 5. (Robust clustered) linear regression models showing insubstantial differences in expert ratings between demographic extremes (top/bottom 2.5%).*
 
 ### Role-Specific Performance Metrics
 More relevant role-specific performance indicators were determined in the following models.
 
-<table>
-  <tr>
-    <td align="center">
-      <b>Goalkeeper</b><br>
-      <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Performance%20Metrics%20-%20Goalkeeper.png" title="ss_dangmistakes: dangerous mistakes by player, ss_goals_ag_otb: goals conceded from outside the box, ss_goals_ag_itb: goals conceded from inside the box, ss_saves_itb: saves made from inside the box, team_goals: goals by team, team_rating: average rating of other team members, opp_gk_rating: rating of opponent goalkeeper, opp_bestfw_rating: highest rating of opponent forwards"/>
-    </td>
-    <td align="center">
-      <b>Defender</b><br>
-      <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Performance%20Metrics%20-%20Defender.png" title="ss_goals: goals by player, ss_assists: assists by player, ss_chances2score: chances player had to score, ss_clearances: clearances made by player, team_rating: average rating of other team players, team_pos_rating: average rating of other players in this position, opp_goals: goals made by opponents"/>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <b>Midfielder</b><br>
-      <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Performance%20Metrics%20-%20Midfielder.png" title="ss_goals: goals by player, ss_assists: assists by player, ss_passes_acc: accurate passes by player, ss_crosses_acc: accurate crosses by player, team_rating: average rating of other team members, team_pos_rating: average rating of other players in this position"/>
-    </td>
-    <td align="center">
-      <b>Defender</b><br>
-      <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Performance%20Metrics%20-%20Forward.png" title="ss_goals: goals by player, ss_touches: number of times the player touched the ball, team_rating: average rating of other team members"/> 
-      </td>
-  </tr>
-</table>
-
+<p align="center">
+  <img src=Visuals/Regression%20Regression%20Performance%20Indicators.png \>
+</p>
 *Figure 6. (Robust clustered) linear regression models using result-driven performance indactors as comparison to demographic variables.*
 
 
@@ -97,54 +76,15 @@ More relevant role-specific performance indicators were determined in the follow
 ### Interaction Effects
 To determine whether demographic variables might have an indirect effect, interactions were evaluated between the demographic extremes and the performance predictors dominant across several roles (goals and team ratings). Nevertheless, the interactions explained only a minor part of the variance (R^2 < 0.05).
 
-<table>
-  <tr>
-    <td align="center">
-      <b>Goalkeeper</b><br>
-      <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Goal%20Interactions%20-%20Goalkeeper.png"/>
-    </td>
-    <td align="center">
-      <b>Defender</b><br>
-      <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Goal%20Interactions%20-%20Defender.png"/> 
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <b>Midfielder</b><br>
-      <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Goal%20Interactions%20-%20Midfielder.png"/>
-    </td>
-    <td align="center">
-      <b>Defender</b><br>
-      <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Goal%20Interactions%20-%20Forward.png"/> 
-      </td>
-  </tr>
-</table>
-
+<p align="center">
+  <img src=Visuals/Regression%20Regression%20Goal%20Interactions.png \>
+</p>
 *Figure 7. (Robust clustered) linear regression models testing interaction effects between demographic extremes and goals scored.*
 
-<table>
-  <tr>
-    <td align="center">
-      <b>Goalkeeper</b><br>
-      <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Team%20Rating%20Interactions%20-%20Defender.png"/>
-    </td>
-    <td align="center">
-      <b>Defender</b><br>
-      <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Team%20Rating%20Interactions%20-%20Defender.png"/> 
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <b>Midfielder</b><br>
-      <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Team%20Rating%20Interactions%20-%20Midfielder.png"/>
-    </td>
-    <td align="center">
-      <b>Defender</b><br>
-      <img src="https://github.com/JorisRoelofs/Portfolio/blob/main/Soccer%20Performance%20Demographics%20-%20Statistics%2C%20STATA/Visuals/Regression%20Team%20Rating%20Interactions%20-%20Forward.png"/> 
-      </td>
-  </tr>
-</table>
 
+<p align="center">
+  <img src=Visuals/Regression%20Regression%2Team%20Rating%20Interactions.png \>
+</p>
 *Figure 8. (Robust clustered) linear regression models testing interaction effects between demographic extremes and team ratings.*
 
 ## Conclusions
