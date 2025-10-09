@@ -1,2 +1,2 @@
 # Portfolio
-Selection of personal Python, SQL, Power BI, and STATA projects
+Selection of personal Python, R, Power BI & SQL projects that capture my Statistics, Machine Learning, and Dashboarding capabilities.
