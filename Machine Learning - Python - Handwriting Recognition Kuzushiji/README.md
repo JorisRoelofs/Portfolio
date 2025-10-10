@@ -196,7 +196,7 @@ plot_class_examples(X, y, num_per_class=5, class_names=Kuzushiji_classes, title=
 
 
     
-![png](VisualsREADME_6_0.png)
+![png](Visuals/README_6_0.png)
     
 
 
@@ -291,7 +291,7 @@ plot_tsne()
 
 
     
-![png](VisualsREADME_10_0.png)
+![png](Visuals/README_10_0.png)
     
 
 
@@ -350,7 +350,7 @@ plot_curve(X,y,0.25)
 
 
     
-![png](VisualsREADME_12_0.png)
+![png](Visuals/README_12_0.png)
     
 
 
@@ -495,7 +495,7 @@ plot_character_coefficients(X, y, 'tsu', 'l2', 200)
 
 
     
-![png](VisualsREADME_18_1.png)
+![png](Visuals/README_18_1.png)
     
 
 
@@ -570,7 +570,7 @@ plot_learning_curves(*learning_curve(X_embed, y, n_epochs=100), title="embedded 
 
 
     
-![png](VisualsREADME_20_1.png)
+![png](Visuals/README_20_1.png)
     
 
 
@@ -581,7 +581,7 @@ plot_learning_curves(*learning_curve(X_embed, y, n_epochs=100), title="embedded 
 
 
     
-![png](VisualsREADME_20_3.png)
+![png](Visuals/README_20_3.png)
     
 
 
@@ -738,7 +738,7 @@ plot_learning_curves(train_acc, val_acc, title="Best Model Learning Curve")
 
 
     
-![png](VisualsREADME_21_1.png)
+![png](Visuals/README_21_1.png)
     
 
 
@@ -1313,61 +1313,61 @@ bgs_pixel.plot_histories()
 
 
     
-![png](VisualsREADME_27_10.png)
+![png](Visuals/README_27_10.png)
     
 
 
 
     
-![png](VisualsREADME_27_11.png)
+![png](Visuals/README_27_11.png)
     
 
 
 
     
-![png](VisualsREADME_27_12.png)
+![png](Visuals/README_27_12.png)
     
 
 
 
     
-![png](VisualsREADME_27_13.png)
+![png](Visuals/README_27_13.png)
     
 
 
 
     
-![png](VisualsREADME_27_14.png)
+![png](Visuals/README_27_14.png)
     
 
 
 
     
-![png](VisualsREADME_27_15.png)
+![png](Visuals/README_27_15.png)
     
 
 
 
     
-![png](VisualsREADME_27_16.png)
+![png](Visuals/README_27_16.png)
     
 
 
 
     
-![png](VisualsREADME_27_17.png)
+![png](Visuals/README_27_17.png)
     
 
 
 
     
-![png](VisualsREADME_27_18.png)
+![png](Visuals/README_27_18.png)
     
 
 
 
     
-![png](VisualsREADME_27_19.png)
+![png](Visuals/README_27_19.png)
     
 
 
@@ -1376,13 +1376,13 @@ bgs_pixel.plot_histories()
 
 
     
-![png](VisualsREADME_27_21.png)
+![png](Visuals/README_27_21.png)
     
 
 
 
     
-![png](VisualsREADME_27_22.png)
+![png](Visuals/README_27_22.png)
     
 
 
@@ -1391,25 +1391,25 @@ bgs_pixel.plot_histories()
 
 
     
-![png](VisualsREADME_27_24.png)
+![png](Visuals/README_27_24.png)
     
 
 
 
     
-![png](VisualsREADME_27_25.png)
+![png](Visuals/README_27_25.png)
     
 
 
 
     
-![png](VisualsREADME_27_26.png)
+![png](Visuals/README_27_26.png)
     
 
 
 
     
-![png](VisualsREADME_27_27.png)
+![png](Visuals/README_27_27.png)
     
 
 
@@ -1510,61 +1510,61 @@ bgs_pixel.plot_histories()
 
 
     
-![png](VisualsREADME_27_40.png)
+![png](Visuals/README_27_40.png)
     
 
 
 
     
-![png](VisualsREADME_27_41.png)
+![png](Visuals/README_27_41.png)
     
 
 
 
     
-![png](VisualsREADME_27_42.png)
+![png](Visuals/README_27_42.png)
     
 
 
 
     
-![png](VisualsREADME_27_43.png)
+![png](Visuals/README_27_43.png)
     
 
 
 
     
-![png](VisualsREADME_27_44.png)
+![png](Visuals/README_27_44.png)
     
 
 
 
     
-![png](VisualsREADME_27_45.png)
+![png](Visuals/README_27_45.png)
     
 
 
 
     
-![png](VisualsREADME_27_46.png)
+![png](Visuals/README_27_46.png)
     
 
 
 
     
-![png](VisualsREADME_27_47.png)
+![png](Visuals/README_27_47.png)
     
 
 
 
     
-![png](VisualsREADME_27_48.png)
+![png](Visuals/README_27_48.png)
     
 
 
 
     
-![png](VisualsREADME_27_49.png)
+![png](Visuals/README_27_49.png)
     
 
 
@@ -1573,13 +1573,13 @@ bgs_pixel.plot_histories()
 
 
     
-![png](VisualsREADME_27_51.png)
+![png](Visuals/README_27_51.png)
     
 
 
 
     
-![png](VisualsREADME_27_52.png)
+![png](Visuals/README_27_52.png)
     
 
 
@@ -1588,25 +1588,25 @@ bgs_pixel.plot_histories()
 
 
     
-![png](VisualsREADME_27_54.png)
+![png](Visuals/README_27_54.png)
     
 
 
 
     
-![png](VisualsREADME_27_55.png)
+![png](Visuals/README_27_55.png)
     
 
 
 
     
-![png](VisualsREADME_27_56.png)
+![png](Visuals/README_27_56.png)
     
 
 
 
     
-![png](VisualsREADME_27_57.png)
+![png](Visuals/README_27_57.png)
     
 
 
