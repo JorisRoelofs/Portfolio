@@ -4,6 +4,13 @@
 ## Overview
 Many historical manuscripts, letters, and books remain inaccessible to the general Japanese public as the ancient Kuzushiji script has fazed out of popularity. Furthermore, the same character can be written in multiple ways, leaving some texts intelligible to all but expert linguists. As such, I developed a machine learning pipeline for recognizing common Kuzishiji characters in handwriting and translating them into modern Japanese (Romaji). It performs a Bayesian grid search to optimize hyperparameters for each model, automatically selecting the most performative model. It also compares the performance of both pixel and embedding representations of the data, for each of the following models:
 
+## Key Results
+- 
+- 
+- Visualized 
+Automatic hyperparameter tuning was highly succesful, with most models reaching >90% validation accuracy and the most performative model () topping off at . 
+
+## Models Implemented
 Classical Machine Learning:
 - Logistic Regression
 - Nearest Neighbour
@@ -17,7 +24,7 @@ Deep Learning:
 - Convolutional Neural Network
 
 ## Data Source
-- **Kuzushiji-MNIST**: a dataset of 70.0000 handwritten images (28x28 grayscale) of the 10 most common Kanji characters in a variety of Kuzushiji handwritings, from [Kaggle](https://www.kaggle.com/datasets/anokas/kuzushiji).
+- **Kuzushiji-MNIST**: a dataset of 70.0000 handwritten images (28x28 grayscale) of the 10 most common Kuzushiji characters in a variety of handwritings, from [Kaggle](https://www.kaggle.com/datasets/anokas/kuzushiji).
 [visualization]
 
 ## Results
