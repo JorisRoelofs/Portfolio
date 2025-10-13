@@ -4,6 +4,36 @@
 ## Overview
 Many historical manuscripts, letters, and books remain inaccessible to the general Japanese public as the ancient Kuzushiji script has fazed out of popularity. Furthermore, the same character can be written in multiple ways, leaving some texts intelligible to all but expert linguists. As such, I developed a machine learning pipeline for recognizing common Kuzishiji characters in handwriting and translating them into modern Japanese (Romaji). It performs a Bayesian grid search to optimize hyperparameters for each model, automatically selecting the most performative model. It also compares the performance of both pixel and embedding representations of the data, for each of the following models:
 
+## Skills Demonstrated
+- **Machine Learning**:
+    - Logistic Regression
+    - Nearest Neighbor
+    - Decision Tree
+    - Random Forest
+    - Gradient Boosting
+- **Deep Learning**:
+    - Stochastig Gradient Descent
+    - Multilayer Perceptron
+    - Convolutional Neural network
+- **Pipeline Optimization**:
+    - Bayesian optimization
+    - Optuna
+    - Model tuning
+- **Data Processing**
+    - Pandas
+    - NumPy
+    - Vector Embedding
+- **Data Visualization**
+    - Bar Plot
+    - Learning Curve
+    - Confusion Matrix
+    - t-SNE Dimensionality Collapse
+    - Decision Weight Heatmaps
+- **Evaluation & Analysis**
+    - Cross-validation
+    - Few-shot learning
+    - Model inspection.
+
 ## Key Results
 - 
 - 
