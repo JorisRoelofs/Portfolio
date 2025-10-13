@@ -17,7 +17,7 @@ Professional soccer teams face increasing pressure to optimize player recruitmen
 - **Compatibility**: The competitions were checked for demographic differences to ensure compatibility. No major differences were observed, confirming that they could be analyzed together.
 
 <p align="center">
-  <img src=Visuals/Boxplot%20Demograpics%20-%20Competition.png \>
+  <img src=Visuals/Boxplot%20Demograpics%20-%20Competition.png>
 </p>
 
 *Figure 1. Box plot showing limited demographical differences between the four competitions.*
@@ -32,13 +32,13 @@ Professional soccer teams face increasing pressure to optimize player recruitmen
 Goalkeepers displayed significant differences compared to other roles. Relative to Midfielders, Goalkeepers were taller (+12.4 ± 1.5 cm, p < 0.001), older (+2.7 ± 1.1 years, p < 0.001), and leaner (−2.8 ± 0.6 BMI, p < 0.001). Nevertheless, even as the shortest role Midfielders (179.7cm) were substantially taller than the male population average of 172.7cm (p < 0.001, Cohen’s d = 23.5).
 
 <p align="center">
-  <img src=Visuals/Boxplot%20Demograpics%20-%20Role.png \>
+  <img src=Visuals/Boxplot%20Demograpics%20-%20Role.png>
 </p>
 
 *Figure 2. Box plot showing the demographical differences between soccer roles.*
 
 <p align="center">
-  <img src=Visuals/Regression%20Role%20Differences.png \>
+  <img src=Visuals/Regression%20Role%20Differences.png>
 </p>
 
 *Figure 3. (Robust clustered) linear models showing substantial demographical differences between Goalkeepers and outfield roles.*
@@ -47,7 +47,7 @@ Goalkeepers displayed significant differences compared to other roles. Relative 
 Despite these differences, no substantial effects were found of age, height, weight, BMI, or footedness on individual player performance ratings by experts (Kicker, Bild, Skysport).
 
 <p align="center">
-  <img src=Visuals/Regression%20Demographics.png \>
+  <img src=Visuals/Regression%20Demographics.png>
 </p>
 
 *Figure 4. (Robust clustered) linear regression models showing insignificant effects of demographical differences on expert performance ratings. Note: Age and weight were determined per competition (cup), while only a single height and footedness measure were available per player.*
@@ -55,7 +55,7 @@ Despite these differences, no substantial effects were found of age, height, wei
 Even in extreme demographical subsets (top/bottom 2.5%) effects were mostly insignificant. In contrast to the Goalkeeper-archetype, the top 2.5% tallest and lightest players were rated slightly worse while the top 2.5% youngest and heaviest players were rated slightly better, although explained variance is minor (p < 0.05, R^2 = 0.01).
 
 <p align="center">
-  <img src=Visuals/Regression%20Demographic%20Extremes.png \>
+  <img src=Visuals/Regression%20Demographic%20Extremes.png>
 </p>
 
 *Figure 5. (Robust clustered) linear regression models showing insubstantial differences in expert ratings between demographic extremes (top/bottom 2.5%).*
@@ -64,7 +64,7 @@ Even in extreme demographical subsets (top/bottom 2.5%) effects were mostly insi
 More relevant role-specific performance indicators were determined in the following models.
 
 <p align="center">
-  <img src=Visuals/Regression%20Performance%20Indicators.png \>
+  <img src=Visuals/Regression%20Performance%20Indicators.png>
 </p>
 
 *Figure 6. (Robust clustered) linear regression models using result-driven performance indactors as comparison to demographic variables.*
@@ -83,14 +83,14 @@ More relevant role-specific performance indicators were determined in the follow
 To determine whether demographic variables might have an indirect effect, interactions were evaluated between the demographic extremes and the performance predictors dominant across several roles (goals and team ratings). Nevertheless, the interactions explained only a minor part of the variance (R^2 < 0.05).
 
 <p align="center">
-  <img src=Visuals/Regression%20Goal%20Interactions.png \>
+  <img src=Visuals/Regression%20Goal%20Interactions.png>
 </p>
 
 *Figure 7. (Robust clustered) linear regression models testing interaction effects between demographic extremes and goals scored.*
 
 
 <p align="center">
-  <img src=Visuals/Regression%20Team%20Rating%20Interactions.png \>
+  <img src=Visuals/Regression%20Team%20Rating%20Interactions.png>
 </p>
 
 *Figure 8. (Robust clustered) linear regression models testing interaction effects between demographic extremes and team ratings.*

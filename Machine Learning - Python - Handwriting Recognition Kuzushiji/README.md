@@ -1,24 +1,30 @@
 # Kuzishiji Handwriting Recognition
 ***Skills***_: Machine Learning, Python (Scikit-Learn, TensorFlow, Matplotlib, NumPy, Pandas)_
 
-## Overview
-Many historical manuscripts, letters, and books remain inaccessible to the general Japanese public as the ancient Kuzushiji script has fazed out of popularity. Furthermore, the same character can be written in multiple ways, leaving some texts intelligible to all but expert linguists. As such, I developed a machine learning pipeline for recognizing common Kuzishiji characters in handwriting and translating them into modern Japanese (Romaji). It performs a Bayesian grid search to optimize hyperparameters for each model, automatically selecting the most performative model. It also compares the performance of both pixel and embedding representations of the data, for each of the following models:
+## Problem Overview
+With the ancient Kuzushiji script faded from popularity many historical manuscripts, letters, and books remain inaccessible to the general Japanese public. Furthermore, the same character can be written in a large variety of ways, leaving some texts intelligible to all but expert linguists.
+
+## Solution
+I developed a machine learning pipeline for recognizing common Kuzishiji characters in handwriting and translating them into modern Japanese (Romaji). It performs Bayesian Optimization using Optuna to efficiently find the best hyperparameter values for each model, then selecting the most performative pipeline from both Scikit-Learn and TensorFlow models. Both pixel representations and embedded representations were implemented for ideal and robust scenario's.
+
+## Key Results
+- Achieved >90% validation accuracy with 6 out of 7 models by implementing automatic hyperparameter tuning and vector embeddings.
+- Achieved 95.3% validation accuracy using a Convolutional Neural Network, succesfully classifying ancient characters with 70.000 differing representations.
+- Visualized confusion matrices, demonstrating that there is no class performance imbalances in any of the final models.
 
 ## Skills Demonstrated
-- **Machine Learning**:
+- **Machine Learning (Scikit-Learn)**:
     - Logistic Regression
     - Nearest Neighbor
     - Decision Tree
     - Random Forest
     - Gradient Boosting
-- **Deep Learning**:
+- **Deep Learning (TensorFlow)**:
     - Stochastig Gradient Descent
     - Multilayer Perceptron
-    - Convolutional Neural network
-- **Pipeline Optimization**:
-    - Bayesian optimization
-    - Optuna
-    - Model tuning
+    - Convolutional Neural Network
+- **Pipeline Optimization (Optuna)**:
+    - Bayesian Optimization
 - **Data Processing**
     - Pandas
     - NumPy
@@ -29,41 +35,42 @@ Many historical manuscripts, letters, and books remain inaccessible to the gener
     - Confusion Matrix
     - t-SNE Dimensionality Collapse
     - Decision Weight Heatmaps
-- **Evaluation & Analysis**
-    - Cross-validation
-    - Few-shot learning
-    - Model inspection.
-
-## Key Results
-- 
-- 
-- Visualized 
-Automatic hyperparameter tuning was highly succesful, with most models reaching >90% validation accuracy and the most performative model () topping off at . 
-
-## Models Implemented
-Classical Machine Learning:
-- Logistic Regression
-- Nearest Neighbour
-- Decision Tree
-- Random Forest
-- Histogram Gradient Boosting
-
-Deep Learning:
-- Stochastic Gradient Descent
-- Multilayer Perceptron
-- Convolutional Neural Network
 
 ## Data Source
 - **Kuzushiji-MNIST**: a dataset of 70.0000 handwritten images (28x28 grayscale) of the 10 most common Kuzushiji characters in a variety of handwritings, from [Kaggle](https://www.kaggle.com/datasets/anokas/kuzushiji).
 [visualization]
 
+<p align="center">
+  <img src=[Kuzushi script examples]>
+</p>
+Figure 1. Each Kuzushiji character features a vast variety of representations.
+
 ## Results
+- Heatmap
+
+Figure 2. The leftmost heatmap shows an underfit representation following the contour of common features not shared by all examples, while the middle and right heatmaps show  large weight differences between pixels. An image that is off-center, rotated, noisy, or scaled would likely not be recognised, leaving the model unrobust.
+
+Pixel models are highly dependent on the data being normalized on centering, rotation, and scaling, with noise being able to ... . As the dataset is noiseless and normalized it is likely to perform well, but embedding the pixel representation as vector features is still likely to increase robustness for many models. As shown in Figure 2, the large differences in median and mean weight show an inbalance in decision weights.
+clean, centered, unrotated data. Furthermore, CNN can only handle pixel representations.
+
 - "t-SNE Multidimensional"
-- "Few-shot learning"
-- Learning curves
-- Most performative model confusion matrix
+Figure 3. While there is some overlap, by using high-dimensional embeddings the classes form clear, distinguishable clusters.
+
 - Most performative model bar chart
-- Most performative model
+Figure 4. 
+
+- Most performative model confusion matrix
+
+
+- Learning curve 
+Fig X, Y, Z. Learning curve of the ...
+
+
+- Learning curve 
+Figure X. Despite a level of overfitting, the Multilayer Perceptron was able to achieve the highest validation and evaluation accuracies by learning detailed patterns.
+
+- Learning curve CNN
+
 
 ## Setup
 Import libraries, check versioning, set plot display, and hide convergence warnings.
