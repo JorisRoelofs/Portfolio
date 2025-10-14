@@ -3,7 +3,7 @@
 # Set notebook and output file
 Write-Host "Converting $notebook to markdown..."
 $notebook = "Handwriting Recognition Kuzushiji.ipynb"
-$output   = "README.md"
+$output   = "Visuals.md"
 
 # Stop script on any error
 $ErrorActionPreference = "Stop"
