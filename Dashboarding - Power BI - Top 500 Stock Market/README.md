@@ -1,4 +1,4 @@
-# Kuzishiji Handwriting Recognition
+# Top 500 Stock Market Dashboard
 ***Skills***_: Dashboarding, Power BI, Finance
 
 ## Problem Overview
