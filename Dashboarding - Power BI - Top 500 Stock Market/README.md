@@ -24,22 +24,26 @@ I designed a more advanced dashboard in Power BI as a personal study . It expand
 <p align="center">
   <img src="Visuals/Stock Market Dashboard - Overview.png">
 </p>
+
 *Figure 1: Dasboard showing all top 500 stocks (by market cap) in a sortable table alongside a graph with their average trendline.*
 
 ### Help Function
 <p align="center">
   <img src="Visuals/Stock Market Dashboard - Overview Help.png">
 </p>
+
 *Figure 2: When the help button is pressed, an overlay explains the functionality of the buttons do (white) and describes each table and graph (light grey).*
 
 ### Sector Filtering
 <p align="center">
   <img src="Visuals/Stock Market Dashboard - Sector.png">
 </p>
-*Figure 3: Sector-specific view of the dashboard. Tables display metrics and news for fossil fuel companies, while the graph shows average stock prices within the industry.*
+
+*Figure 3: Sector-specific view of the dashboard. Tables display metrics and news for fossil fuel companies, while the graph shows the average stock prices within the industry.*
 
 ### Single Stock Details
 <p align="center">
   <img src="Visuals/Stock Market Dashboard - Single Stock.png">
 </p>
+
 *Figure 4: Dashboard filtered to a single stock, showing more detailed trendlines and related news articles.*
