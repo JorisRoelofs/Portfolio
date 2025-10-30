@@ -9,7 +9,6 @@ I developed a machine learning pipeline capable of recognizing common handwritte
 - **Data Processing**: Generates vector embeddings from pixel data to improve robustness, with all models except the specialized Convolution Neural Network supporting both pixel and embedded data inputs.
 - **Multimodel Evaluation**: Automatically trains, compares, and graphs results of Scikit-Learn machine learning models (Logistic Regression, k-NN, Decision Tree, Random Forest, Gradient Boosting) and TensorFlow deep learning models (Multilayer Perceptron, Convolutional Neural Network, Stochastic Gradient Descent).
 - **Hyperparameter Autotuning**: Efficiently optimizes model hyperparameters using Bayesian Optimization with Optuna.
-Applied Optuna for Bayesian hyperparameter optimization.
 - **Result Visualization**: Plots confusion matrices, heatmaps, t-SNE projections, learning curves, and per-class accuracy charts to interpret the data and results.
 
 ## Key Results

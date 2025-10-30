@@ -2,7 +2,7 @@
 ***Skills***_: Statistics, R, STATA, Excel_
 
 ## Overview
-Professional soccer teams face increasing pressure to optimize player recruitment and development using objective data. As such, this project evaluates how player demographics (age, height, weight, BMI, and footedness) relate to expert performance ratings across different roles. Two datasets were merged, cleaned, and analyzed using Excel, STATA, and R. Demographic characteristics were found to differ substantially between roles, yet had minimal predictive value for performance. Role-specific performance indicators provided more actionable insights for scouting, training, and team composition.
+Professional soccer teams face increasing pressure to optimize player recruitment and development using objective data. As such, I tested multiple regression models to evaluate how player demographics (age, height, weight, BMI, and footedness) relate to expert performance ratings across different roles. Two datasets were merged, cleaned, and analyzed using Excel, STATA, and R. Demographic characteristics were found to differ substantially between roles, yet had minimal predictive value for performance. Role-specific performance indicators provided more actionable insights for scouting, training, and team composition.
 
 ## Data Sources
 - **Performance dataset**: 134 metrics for each player per match from four professional cups (UEFA Euro 2016, Premier League 2017, Bundesliga 2017 and FIFA World Cup 2018). Provided by researcher Chris Snijders.
