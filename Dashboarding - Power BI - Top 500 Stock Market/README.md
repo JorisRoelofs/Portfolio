@@ -22,24 +22,24 @@ I designed a more advanced dashboard in Power BI as a personal study . It expand
 ## Dashboard
 ### Market Overview
 <p align="center">
-  <img src="Visuals/Stock Market Dashboard - Overview.pdf">
+  <img src="Visuals/Stock Market Dashboard - Overview.png">
 </p>
-*Figure 1: Dasboard showing all top 500 stocks in a sortable table and a graph with their average trendline.*
+*Figure 1: Dasboard showing all top 500 stocks (by market cap) in a sortable table alongside a graph with their average trendline.*
 
 ### Help Function
 <p align="center">
-  <img src="Visuals/Stock Market Dashboard - Overview Help.pdf">
+  <img src="Visuals/Stock Market Dashboard - Overview Help.png">
 </p>
-*Figure 2: Pressing the help button explains what all buttons do (in white) and what each table and graph shows (in light grey).*
+*Figure 2: When the help button is pressed, an overlay explains the functionality of the buttons do (white) and describes each table and graph (light grey).*
 
 ### Sector Filtering
 <p align="center">
-  <img src="Visuals/Stock Market Dashboard - Sector.pdf">
+  <img src="Visuals/Stock Market Dashboard - Sector.png">
 </p>
-*Figure 3: Top 500 stock market dashboard, with tables showing metrics and news for each fossil fuel companies and the graph showing the average stock prices in the fossil fuel indsutry.*
+*Figure 3: Sector-specific view of the dashboard. Tables display metrics and news for fossil fuel companies, while the graph shows average stock prices within the industry.*
 
-### Overview
+### Single Stock Details
 <p align="center">
-  <img src="Visuals/Stock Market Dashboard - Single Stock.pdf.pdf">
+  <img src="Visuals/Stock Market Dashboard - Single Stock.png">
 </p>
-*Figure 4: Top 500 stock market dashboard, filtered on a single stock.*
+*Figure 4: Dashboard filtered to a single stock, showing more detailed trendlines and related news articles.*
